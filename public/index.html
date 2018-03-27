@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115875327-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115875327-1');
+    </script>
+        -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="body.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="head-container">
+            <div id="title">
+                Matchue
+            </div>
+        </div>
+        <div class="body-container">
+            <div id="type">
+                Chat
+            </div>
+
+            <div class="msg">
+                <div class="msg-item">
+
+                </div>
+            </div>
+
+            <div class="send">
+                <div class="send-msg">
+                    <textarea id="send-content" rows="2"></textarea>
+                </div>
+                <div id="send-submit" class="button">
+                    Submit
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar-container">
+            <a href="https://matchue.ca/p/" class="button">Projects</a>
+            <a href="https://matchue.ca/r/" class="button">Ramblings</a>
+            <a href="https://matchue.ca/c/" class="button">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            var sososo = document.getElementsByTagName("div");
+            for (s = 0; s < sososo.length; s++) {
+                if (sososo[s].innerHTML.substring(0, 12) == '<a title="Ho') sososo[s].innerHTML = "";
+            }
+        }, 10);
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
